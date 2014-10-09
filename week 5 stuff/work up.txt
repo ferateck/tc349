@@ -1,0 +1,31 @@
+the first design principles that i will be looking at is Affordance
+
+the bad example of affordance is targeting the flask behind all of the people sitting on the couch.
+the flask is actually a link to another product, but is poorly indicated so.
+
+the good example of affordance is the top of the chiverys page. everything is well layed out and does what you expect it to do.
+
+Mapping
+
+the bad mapping has a very poor layout. the picture speaks for itself.
+
+the good mapping is the google home page. your eyes are drawn to where they need to go, and the page is easily understood.
+
+Chunking
+
+the good chunking is from google, and is how they display the results from their searches.
+
+the bad chunking is shown from how cluttered the page is, with information being thrown at the user from every direction.
+
+Ockham's Razor
+
+the example for good once again comes from google.
+
+ockham's razor bad is someone's redesign of google showing how simpler is better.
+
+Hicks Law
+
+the good once again is the google home page making easy and quick to make a decision when all we can do is search.
+
+the example for the bad comes from the redesign for google... again, there are so many options there that the user will be distracted and possibly forget whey they even went to the site in the first place.
+
