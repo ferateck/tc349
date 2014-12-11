@@ -1,0 +1,44 @@
+#workscited {
+	background: none;
+	min-height: 500px;
+}
+
+#workscited .center {
+	padding: 50px;
+}
+
+#workscited h1 {
+	color: #00b3d3;
+	font-style: italic;
+	text-shadow: 5px 5px 1px #004c5a;
+	font-size: 70px;
+}
+
+#workscited p {
+	color: #ddd;
+	padding: 20px;
+	background: #111;
+	border: 1px solid #aaa;
+}
+
+#workscited p span.name{
+	float: right;
+	margin: 10px;
+	font-style: italic;
+	font-size: 20px;
+	color: #555;
+}
+#workscited ul {
+	list-style-type: none;
+}
+#workscited ul li {
+	border: 1px solid #333;
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 0px 0px 5px black;
+}
+
+#workscited ul li a {
+	display: block;
+}

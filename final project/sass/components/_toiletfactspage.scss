@@ -1,0 +1,45 @@
+#toiletfacts {
+	background-color: rgba(181, 242, 255, 0.6);
+	min-height: 500px;
+}
+
+#toiletfacts .center {
+	padding: 50px;
+}
+
+#toiletfacts h1 {
+	color: #00b3d3;
+	font-style: italic;
+	text-shadow: 5px 5px 1px #004c5a;
+	font-size: 70px;
+}
+
+#toiletfacts p {
+	color: #ddd;
+	padding: 20px;
+	background: #111;
+	border: 1px solid #aaa;
+}
+
+#toiletfacts p span.name{
+	float: right;
+	margin: 10px;
+	font-style: italic;
+	font-size: 20px;
+	color: #555;
+}
+
+#toiletfacts ol {
+    list-style-type: none;
+    counter-reset: ol-counter;
+	line-height: 36px;
+}
+
+#toiletfacts ol > li:before {
+    content: counter(ol-counter);
+    counter-increment: ol-counter;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 10px;
+}

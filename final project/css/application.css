@@ -1,0 +1,664 @@
+/* HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, ../sass/components/_base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../sass/components/_base.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, ../sass/components/_base.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, ../sass/components/_base.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, ../sass/components/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 63, ../sass/components/_base.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, ../sass/components/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, ../sass/components/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 89, ../sass/components/_base.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 124, ../sass/components/_base.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 132, ../sass/components/_base.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 143, ../sass/components/_base.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 152, ../sass/components/_base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 169, ../sass/components/_base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 182, ../sass/components/_base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 199, ../sass/components/_base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 204, ../sass/components/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 213, ../sass/components/_base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 240, ../sass/components/_base.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 248, ../sass/components/_base.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 252, ../sass/components/_base.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 256, ../sass/components/_base.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 266, ../sass/components/_base.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 271, ../sass/components/_base.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 276, ../sass/components/_base.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 281, ../sass/components/_base.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 285, ../sass/components/_base.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 295, ../sass/components/_base.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 301, ../sass/components/_base.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 306, ../sass/components/_base.scss */
+body {
+  background: url(../img/bg_y.jpg) repeat-y #face31 top center;
+}
+
+/* line 310, ../sass/components/_base.scss */
+#top_background {
+  background: url(../img/background.jpg) no-repeat #face31;
+  background-position: top center;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 1080px;
+  z-index: -1;
+}
+
+/* line 321, ../sass/components/_base.scss */
+.content {
+  position: relative;
+  top: 500px;
+  margin: 0px auto;
+  width: 1000px;
+  min-height: 500px;
+}
+
+/* line 329, ../sass/components/_base.scss */
+h1 {
+  font-family: "Calibri";
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  margin: none;
+}
+
+/* line 337, ../sass/components/_base.scss */
+.content .panel h1 {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: -40px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #666;
+  font-size: 36px;
+  color: #333;
+  text-shadow: 1px 1px 0px #cccccc, -1px -1px 0px black;
+  box-shadow: 2px 2px 5px black;
+  font-style: italic;
+}
+
+/* line 352, ../sass/components/_base.scss */
+p {
+  font-family: "Georgia";
+  line-height: 22px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 359, ../sass/components/_base.scss */
+#toilet_things {
+  position: relative;
+  top: 70px;
+}
+
+/* line 363, ../sass/components/_base.scss */
+.flush_things {
+  position: relative;
+  margin-top: -100px;
+}
+
+/* line 367, ../sass/components/_base.scss */
+.flush_item h1 {
+  font-size: 70px;
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+}
+
+/* line 373, ../sass/components/_base.scss */
+.flush_item {
+  position: relative;
+  height: 400px;
+}
+
+/* line 377, ../sass/components/_base.scss */
+.flush_item .circle {
+  position: absolute;
+  top: 0px;
+  right: -105px;
+}
+
+/* line 383, ../sass/components/_base.scss */
+.flush_item .desc {
+  position: absolute;
+  top: 50px;
+  right: 230px;
+  text-align: right;
+}
+
+/* line 390, ../sass/components/_base.scss */
+#fem_product_item {
+  background: url("../img/fp.jpg");
+  background-position: 50% 50%;
+  background-size: 440px;
+}
+
+/* line 396, ../sass/components/_base.scss */
+#pets_item {
+  background: url("../img/goldfish.jpg");
+  background-position: 50% 50%;
+  background-size: 400px;
+}
+
+/* line 402, ../sass/components/_base.scss */
+#diaper_item {
+  background: url("../img/diaper.jpg");
+  background-position: 50% 50%;
+  background-size: 320px;
+}
+
+/* line 408, ../sass/components/_base.scss */
+#tp_item {
+  background: url("../img/pt.jpg");
+  background-position: 50% 50%;
+  background-size: 440px;
+}
+
+/* line 414, ../sass/components/_base.scss */
+.center {
+  margin: 0px auto;
+  width: 1000px;
+}
+
+/* line 419, ../sass/components/_base.scss */
+html, body {
+  display: none;
+}
+
+/* line 1, ../sass/components/_panel.scss */
+.panel {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 5px black;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+/* line 10, ../sass/components/_panel.scss */
+.info {
+  width: 600px;
+}
+
+/* line 2, ../sass/components/_circle.scss */
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border: 10px solid #231100;
+}
+
+/* line 1, ../sass/components/_aboutpage.scss */
+#about {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 500px;
+  margin-top: 500px;
+}
+
+/* line 7, ../sass/components/_aboutpage.scss */
+#about .center {
+  padding: 50px;
+}
+
+/* line 11, ../sass/components/_aboutpage.scss */
+#about h1 {
+  color: #00b3d3;
+  font-style: italic;
+  text-shadow: 5px 5px 1px #004c5a;
+  font-size: 70px;
+}
+
+/* line 18, ../sass/components/_aboutpage.scss */
+#about p {
+  color: #ddd;
+  padding: 20px;
+  background: #111;
+  border: 1px solid #aaa;
+}
+
+/* line 25, ../sass/components/_aboutpage.scss */
+#about p span.name {
+  float: right;
+  margin: 10px;
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+}
+
+/* line 1, ../sass/components/_toiletfactspage.scss */
+#toiletfacts {
+  background-color: rgba(181, 242, 255, 0.6);
+  min-height: 500px;
+}
+
+/* line 6, ../sass/components/_toiletfactspage.scss */
+#toiletfacts .center {
+  padding: 50px;
+}
+
+/* line 10, ../sass/components/_toiletfactspage.scss */
+#toiletfacts h1 {
+  color: #00b3d3;
+  font-style: italic;
+  text-shadow: 5px 5px 1px #004c5a;
+  font-size: 70px;
+}
+
+/* line 17, ../sass/components/_toiletfactspage.scss */
+#toiletfacts p {
+  color: #ddd;
+  padding: 20px;
+  background: #111;
+  border: 1px solid #aaa;
+}
+
+/* line 24, ../sass/components/_toiletfactspage.scss */
+#toiletfacts p span.name {
+  float: right;
+  margin: 10px;
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+}
+
+/* line 32, ../sass/components/_toiletfactspage.scss */
+#toiletfacts ol {
+  list-style-type: none;
+  counter-reset: ol-counter;
+  line-height: 36px;
+}
+
+/* line 38, ../sass/components/_toiletfactspage.scss */
+#toiletfacts ol > li:before {
+  content: counter(ol-counter);
+  counter-increment: ol-counter;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px;
+}
+
+/* line 1, ../sass/components/_workscitedpage.scss */
+#workscited {
+  background: none;
+  min-height: 500px;
+}
+
+/* line 6, ../sass/components/_workscitedpage.scss */
+#workscited .center {
+  padding: 50px;
+}
+
+/* line 10, ../sass/components/_workscitedpage.scss */
+#workscited h1 {
+  color: #00b3d3;
+  font-style: italic;
+  text-shadow: 5px 5px 1px #004c5a;
+  font-size: 70px;
+}
+
+/* line 17, ../sass/components/_workscitedpage.scss */
+#workscited p {
+  color: #ddd;
+  padding: 20px;
+  background: #111;
+  border: 1px solid #aaa;
+}
+
+/* line 24, ../sass/components/_workscitedpage.scss */
+#workscited p span.name {
+  float: right;
+  margin: 10px;
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+}
+
+/* line 31, ../sass/components/_workscitedpage.scss */
+#workscited ul {
+  list-style-type: none;
+}
+
+/* line 34, ../sass/components/_workscitedpage.scss */
+#workscited ul li {
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+/* line 42, ../sass/components/_workscitedpage.scss */
+#workscited ul li a {
+  display: block;
+}
+
+/* line 3, ../sass/components/_fixednavbar.scss */
+#fixednavbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  z-index: 9;
+}
+
+/* line 15, ../sass/components/_fixednavbar.scss */
+#fixednavbar ul {
+  margin: 0px auto;
+  width: 1000px;
+  list-style-type: none;
+}
+
+/* line 21, ../sass/components/_fixednavbar.scss */
+#fixednavbar ul li {
+  display: inline-block;
+  font-weight: bold;
+  float: left;
+  margin-left: 50px;
+}
+
+/* line 28, ../sass/components/_fixednavbar.scss */
+#fixednavbar ul li a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-duration: 50ms;
+  -moz-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
+  transition-duration: 50ms;
+}
+
+/* line 37, ../sass/components/_fixednavbar.scss */
+#fixednavbar ul li:hover a {
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+  border-top: 5px solid red;
+  color: red;
+}

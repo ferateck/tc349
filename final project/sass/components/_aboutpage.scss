@@ -1,0 +1,31 @@
+#about {
+	background-color: rgba(0,0,0,0.6);
+	min-height: 500px;
+	margin-top: 500px;
+}
+
+#about .center {
+	padding: 50px;
+}
+
+#about h1 {
+	color: #00b3d3;
+	font-style: italic;
+	text-shadow: 5px 5px 1px #004c5a;
+	font-size: 70px;
+}
+
+#about p {
+	color: #ddd;
+	padding: 20px;
+	background: #111;
+	border: 1px solid #aaa;
+}
+
+#about p span.name{
+	float: right;
+	margin: 10px;
+	font-style: italic;
+	font-size: 20px;
+	color: #555;
+}
